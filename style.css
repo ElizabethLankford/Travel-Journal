@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+.navbar, footer{
+    background-color: #F55A5A;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer>p{
+    color: whitesmoke;
+    font-size: .7em;
+}
+.nav-title{
+    color: whitesmoke;
+    font-size: 1em;
+    font-weight: 400;
+}
+.pin{
+    color: whitesmoke;
+    margin-right: .5em
+}
+.card-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 1em;
+}
+.card-container:last-child{
+    border-bottom: none;
+}
+.card-container{
+    display: flex;
+    width: 30em;
+    height: 12.5em;
+    border-bottom: 1px solid #E5E4E2;
+    margin:  0;
+}
+.card-img{
+    object-fit: cover;
+    border-radius: 0.3125em;
+    align-self: center;
+}
+.card-info{
+    align-self: center;
+    padding-left: 1.25em;
+}
+.card-links{
+    font-size: 0.625em;
+    margin-bottom: .5em;
+}
+.pin-location{
+    text-transform: uppercase;
+    margin-right: 5%;
+    margin-left: .5em;
+    letter-spacing: 1.5px;
+}
+.google-map-link{
+    color: gray;
+}
+.location{
+    font-size: 1.5625em; 
+    margin: 0;
+}
+.dates{
+    margin-bottom: 0.625em;
+    font-size: 0.625em;
+}
+.dates, .summary, .card-links{
+    font-size: 0.625em;
+}
+.summary{
+    line-height: 1.5em;
+}
+
+
+@media (min-width: 800px){
+    body{
+        height: 100vh;
+        
+    }
+    .card-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        flex-wrap: wrap;
+        max-width: 1500px;
+        margin: auto;
+    }
+    .card-container{
+        flex-basis: auto;
+        padding-right: 1em;
+    }
+
+    footer{
+        margin: 0;
+    }
+}
